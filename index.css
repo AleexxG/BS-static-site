@@ -1,7 +1,54 @@
-.navbar {
-    width: 1100px;
+.main {
+    margin: auto;
+    margin-top: 8rem;
 }
-.bg-primary {
-    font-size: 30px;
-    font-weight: 700
+
+.custom-search {
+    width: 700px;
+    position: relative;
+}
+.custom-search input {
+    width: 100%;
+    padding: 1rem;
+}
+.custom-search button {
+    position: absolute;
+    right: 10px; 
+    top: 10px;
+    bottom: 10px;
+}
+
+.custom-box {
+    width: 150px;
+    height: 110px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.custom-box h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.custom-img {
+    height: 550px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.custom-section-text {
+    position: relative;
+    z-index: 2;
+}
+.custom-section-img {
+    position: absolute;
+    right: 200px;
+    bottom: 60px;
+}
+
+.custom-overlay {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(255, 255, 255));
+    z-index: 1;
+    width: 550px;
+    height: 550px;
+    position: absolute;
 }
