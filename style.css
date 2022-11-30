@@ -1,0 +1,114 @@
+.custom-navbar {
+    width: 1100px;
+}
+
+.custom-header {
+    width: 470px;
+}
+
+.main {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.custom-search {
+    width: 700px;
+    position: relative;
+    z-index: 2;
+}
+.custom-search input {
+    width: 100%;
+    padding: 1.3rem;
+}
+.custom-search button {
+    position: absolute;
+    right: 10px; 
+    top: 10px;
+    bottom: 10px;
+}
+
+.custom-box {
+    width: 150px;
+    height: 110px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.custom-box h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.custom-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.custom-card {
+    width: 550px;
+}
+.custom-img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.custom-overlay {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(255, 255, 255));
+    z-index: 1;
+    width: 550px;
+    height: 550px;
+    position: absolute;
+}
+
+@media (max-width: 1200px) {
+    .custom-navbar {
+        width: 900px;
+    }
+
+    .custom-header {
+        width: 320px;
+    }
+
+    .main {
+        width: 900px;
+    }
+
+    .custom-search {
+        width: 550px;
+        font-size: 15px;
+    }
+
+    .custom-text {
+        font-size: 10px;
+    }
+
+    .custom-box {
+        width: 110px;
+        height: 110px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .custom-box p {
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .custom-container {
+        top: 15px;
+        right: 0;
+    }
+    .custom-card {
+        width: 480px;
+    }
+    .custom-img {
+        height: 480px;
+    }
+    .custom-overlay {
+        width: 480px;
+        height: 480px;
+    }
+    .custom-card p {
+        font-size: 15px;
+    }
+}
