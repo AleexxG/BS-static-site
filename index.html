@@ -10,65 +10,84 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <header class="custom-navbar navbar m-auto pt-4">
-        <nav class="container">
-            <a href="#" class="navbar-brand" style="font-size: 30px; font-weight: 700;"><span class="bg-primary rounded-circle p-2 text-light">inc</span> AUTHORITY</a>
+    <nav class="custom-navbar navbar navbar-expand-lg m-auto pt-4">
+        <header class="container">
+            <a href="#" class="navbar-brand"><span class="bg-primary rounded-circle p-2 text-light">inc</span> AUTHORITY</a>
 
-            <ul class="navbar-nav hstack gap-4">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Free LLC</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Reviews</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Company</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button">Client Portal</a>
-                    <ul class="dropdown-menu" style="position: absolute;">
-                        <li><a href="#" class="dropdown-item">Accounting</a></li>
-                        <li><a href="#" class="dropdown-item">Business Compliance</a></li>
-                        <li><a href="#" class="dropdown-item">Business Credit</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <button class="btn btn-primary rounded-pill pt-2 pb-2">Get Started</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#nav" 
+                aria-controls="nav" 
+                aria-expanded="false" 
+                aria-label="Toggle Navbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="get-started btn btn-primary rounded-pill py-2 px-4">Get Started</button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav hstack-lg gap-xl-4 gap-lg-3 m-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Free LLC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Company</a>
+                    </li>
+                    <li class="nav-item dropdown me-xl-4 me-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button">Client Portal</a>
+                        <ul class="dropdown-menu" style="position: absolute;">
+                            <li><a href="#" class="dropdown-item">Accounting</a></li>
+                            <li><a href="#" class="dropdown-item">Business Compliance</a></li>
+                            <li><a href="#" class="dropdown-item">Business Credit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </nav>
 
     <main class="main d-flex">
         <article class="custom-text container">
             <header class="custom-header">
                 <h1 class="mt-5" style="font-weight: 900; font-size: 50px;">Start Your Business for <span class="text-primary">FREE</span></h1>
 
-                <p class="text-secondary mt-3" style="font-size: 20px;"><span style="font-weight: 900;">100% FREE</span> online LLC registration. You only pay the required state fees - and they're tax-deductible!</p>
+                <p class="text-secondary mt-lg-3 mt-4" style="font-size: 20px;"><span style="font-weight: 900;">100% FREE</span> online LLC registration. You only pay the required state fees - and they're tax-deductible!</p>
 
-                <div class="custom-search mt-xl-5">
+                <div class="custom-search my-5">
                     <input type="text" placeholder="What's the name of your new LLC?" class="border border-3 border-success rounded-pill">
                     <button class="btn btn-success rounded-pill">Check availability</button>
                 </div>
             </header>
 
-            <section class="d-flex gap-4 text-primary mt-xl-5 mt-4 text-center">
-                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 p-3">
-                    <h3>Fast</h3>
-                    <p>24-Hour Order Processing</p>
+            <section class="d-flex gap-4 text-primary text-center">
+                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 px-2">
+                    <div class="text">
+                        <h3>Fast</h3>
+                        <p>24-Hour Order Processing</p>
+                    </div>
                 </div>
 
-                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 p-3">
-                    <h3>Free</h3>
-                    <p>$0 Business Registration</p>
+                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 px-2">
+                    <div class="text">
+                        <h3>Free</h3>
+                        <p>$0 Business Registration</p>
+                    </div>
                 </div>
 
-                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 p-3">
-                    <h3>Friendly</h3>
-                    <p>7-Day USA Based Support</p>
+                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 px-2">
+                    <div class="text">
+                        <h3>Friendly</h3>
+                        <p>7-Day USA Based Support</p>
+                    </div>
                 </div>
             </section>
 
@@ -83,7 +102,7 @@
                 </div>
             </aside>
 
-            <footer class="text-success mt-xl-5 mt-4" style="font-size: 20px; font-weight: 900; font-style: italic;">FREE 1-Year Registered Agent</footer>
+            <footer class="text-success mt-xl-5 mt-lg-4 mt-5" style="font-size: 20px; font-weight: 900; font-style: italic;">FREE 1-Year Registered Agent</footer>
         </article>
     </main>
 </body>
