@@ -13,6 +13,9 @@
 .navbar-collapse {
     margin-left: 8rem;
 }
+.dropdown-menu {
+    position: absolute;
+}
 
 .custom-header {
     width: 470px;
@@ -32,7 +35,7 @@
 }
 .custom-search input {
     width: 100%;
-    padding: 1.3rem;
+    padding: 1.2rem;
 }
 .custom-search button {
     position: absolute;
@@ -191,5 +194,58 @@
 
     footer {
         text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        width: 100%;
+    }
+    .navbar-toggler {
+        margin-right: 1rem;
+        margin-left: auto;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .custom-header {
+        text-align: start;
+    }
+
+    .custom-search button {
+        position: static;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1.2rem;
+        font-weight: 700;
+    }
+
+    footer {
+        text-align: start;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .custom-navbar {
+        width: 500px;
+    }
+
+    .main {
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .custom-navbar {
+        width: 450px;
+    }
+
+    .main {
+        width: 450px;
     }
 }

@@ -29,7 +29,7 @@
             <button class="get-started btn btn-primary rounded-pill py-2 px-4">Get Started</button>
 
             <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav hstack-lg gap-xl-4 gap-lg-3 m-auto">
+                <ul class="navbar-nav hstack-lg gap-xl-4 gap-lg-3 m-auto mt-lg-0 mt-4">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Free LLC</a>
                     </li>
@@ -42,12 +42,36 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Company</a>
                     </li>
-                    <li class="nav-item dropdown me-xl-4 me-3">
+                    <li class="nav-item dropdown me-xl-4 me-3 d-lg-block d-none">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button">Client Portal</a>
-                        <ul class="dropdown-menu" style="position: absolute;">
-                            <li><a href="#" class="dropdown-item">Accounting</a></li>
-                            <li><a href="#" class="dropdown-item">Business Compliance</a></li>
-                            <li><a href="#" class="dropdown-item">Business Credit</a></li>
+                        <ul class="dropdown-menu rounded-0 border-top border-0 border-4 border-primary mt-3 bg-light">
+                            <li><a href="#" class="dropdown-item py-2 px-4">Accounting</a></li>
+                            <li><a href="#" class="dropdown-item py-2 px-4">Business Compliance</a></li>
+                            <li><a href="#" class="dropdown-item py-2 px-4">Business Credit</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item me-xl-4 me-3 d-lg-none d-block">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#more" 
+                        aria-controls="more" 
+                        aria-expanded="false"
+                        role="button"
+                        >Client Portal</a>
+
+                        <ul class="collapse navbar-collapse rounded-0 border-start border-0 border-4 border-secondary border-opacity-50 py-2 px-0" id="more" style="list-style-type: none;">
+                            <li>
+                                <a href="#" class="nav-link py-2 px-4">Accounting</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-2 px-4">Business Compliance</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-2 px-4">Business Credit</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
