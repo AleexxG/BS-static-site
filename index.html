@@ -10,10 +10,13 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <nav class="custom-navbar navbar navbar-expand-lg m-auto pt-4">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg m-auto pt-4">
         <header class="container">
             <a href="#" class="navbar-brand"><span class="bg-primary rounded-circle p-2 text-light">inc</span> AUTHORITY</a>
 
+            <!-- Navbar Collapse Button -->
             <button 
                 class="navbar-toggler" 
                 type="button" 
@@ -26,8 +29,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <button class="get-started btn btn-primary rounded-pill py-2 px-4">Get Started</button>
+            <button class="get_started btn btn-primary rounded-pill py-2 px-4">Get Started</button>
 
+            <!-- Navbar Collapse Start -->
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav hstack-lg gap-xl-4 gap-lg-3 m-auto mt-lg-0 mt-4">
                     <li class="nav-item">
@@ -42,92 +46,104 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Company</a>
                     </li>
+
+                    <!-- Navbar Item Dropdown Start -->
                     <li class="nav-item dropdown me-xl-4 me-3 d-lg-block d-none">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button">Client Portal</a>
+                        <a 
+                            href="#" 
+                            class="nav-link dropdown-toggle" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false" 
+                            role="button"
+                        >Client Portal</a>
+
                         <ul class="dropdown-menu rounded-0 border-top border-0 border-4 border-primary mt-3 bg-light">
                             <li><a href="#" class="dropdown-item py-2 px-4">Accounting</a></li>
                             <li><a href="#" class="dropdown-item py-2 px-4">Business Compliance</a></li>
                             <li><a href="#" class="dropdown-item py-2 px-4">Business Credit</a></li>
                         </ul>
                     </li>
+                    <!-- Navbar Item Dropdown End -->
                     
+                    <!-- Navbar Item Collapse Start -->
                     <li class="nav-item me-xl-4 me-3 d-lg-none d-block">
                         <a 
-                        href="#" 
-                        class="nav-link dropdown-toggle" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#more" 
-                        aria-controls="more" 
-                        aria-expanded="false"
-                        role="button"
+                            href="#" 
+                            class="nav-link dropdown-toggle" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#more" 
+                            aria-controls="more" 
+                            aria-expanded="false"
+                            role="button"
                         >Client Portal</a>
 
                         <ul class="collapse navbar-collapse rounded-0 border-start border-0 border-4 border-secondary border-opacity-50 py-2 px-0" id="more" style="list-style-type: none;">
-                            <li>
-                                <a href="#" class="nav-link py-2 px-4">Accounting</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-2 px-4">Business Compliance</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link py-2 px-4">Business Credit</a>
-                            </li>
+                            <li><a href="#" class="nav-link py-2 px-4">Accounting</a></li>
+                            <li><a href="#" class="nav-link py-2 px-4">Business Compliance</a></li>
+                            <li><a href="#" class="nav-link py-2 px-4">Business Credit</a></li>
                         </ul>
                     </li>
+                    <!-- Navbar Item Collapse End -->
                 </ul>
             </div>
+            <!-- Navbar Collapse End -->
         </header>
     </nav>
+    <!-- Navbar End -->
 
     <main class="main d-flex">
-        <article class="custom-text container">
-            <header class="custom-header">
-                <h1 class="mt-5" style="font-weight: 900; font-size: 50px;">Start Your Business for <span class="text-primary">FREE</span></h1>
+        <!-- First Section Start -->
+        <section class="first_sec container">
+            <header class="first_sec_header">
+                <h1 class="first_sec_title mt-5">Start Your Business for <span class="text-primary">FREE</span></h1>
 
-                <p class="text-secondary mt-lg-3 mt-4" style="font-size: 20px;"><span style="font-weight: 900;">100% FREE</span> online LLC registration. You only pay the required state fees - and they're tax-deductible!</p>
+                <p class="first_sec_par text-secondary mt-lg-3 mt-4"><b style="font-weight: 900;">100% FREE</b> online LLC registration. You only pay the required state fees - and they're tax-deductible!</p>
 
-                <div class="custom-search my-5">
+                <div class="search_bar my-5">
                     <input type="text" placeholder="What's the name of your new LLC?" class="border border-3 border-success rounded-pill">
                     <button class="btn btn-success rounded-pill">Check availability</button>
                 </div>
             </header>
 
-            <section class="d-flex gap-4 text-primary text-center">
-                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 px-2">
+            <div class="d-flex gap-4 text-primary text-center">
+                <aside class="box_custom box bg-primary bg-opacity-10 rounded-3 px-2">
                     <div class="text">
-                        <h3>Fast</h3>
+                        <b>Fast</b>
                         <p>24-Hour Order Processing</p>
                     </div>
-                </div>
+                </aside>
 
-                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 px-2">
+                <aside class="box_custom box bg-primary bg-opacity-10 rounded-3 px-2">
                     <div class="text">
-                        <h3>Free</h3>
+                        <b>Free</b>
                         <p>$0 Business Registration</p>
                     </div>
-                </div>
+                </aside>
 
-                <div class="custom-box box bg-primary bg-opacity-10 rounded-3 px-2">
+                <aside class="box_custom box bg-primary bg-opacity-10 rounded-3 px-2">
                     <div class="text">
-                        <h3>Friendly</h3>
+                        <b>Friendly</b>
                         <p>7-Day USA Based Support</p>
                     </div>
-                </div>
-            </section>
+                </aside>
+            </div>
 
-            <aside class="custom-container">
-                <div class="custom-overlay"></div>
-                <div class="custom-card card border-0">
-                    <img src="./img/business.jpg" alt="Your Business" class="custom-img card-img-top rounded-0">
+            <!-- BG img Start -->
+            <aside class="bg_card">
+                <div class="overlay_custom"></div>
+                <div class="card_custom card border-0">
+                    <img src="./img/business.jpg" alt="Your Business" class="bg_img card-img-top rounded-0">
 
                     <div class="card-body text-bg-secondary p-4 text-center">
-                        <p class="card-text">"This was the simplest way I've ever experienced filing the paperwork for a business formation. Wow. Wish I'd known about this years ago. Thanks!" - Christopher Denton</p>
+                        <q class="card-text">This was the simplest way I've ever experienced filing the paperwork for a business formation. Wow. Wish I'd known about this years ago. Thanks!</q> <span>- Christopher Denton</span>
                     </div>
                 </div>
             </aside>
+            <!-- BG img End -->
 
-            <footer class="text-success mt-xl-5 mt-lg-4 mt-5" style="font-size: 20px; font-weight: 900; font-style: italic;">FREE 1-Year Registered Agent</footer>
-        </article>
+            <footer class="first_sec_footer text-success mt-xl-5 mt-lg-4 mt-5">FREE 1-Year Registered Agent</footer>
+        </section>
+        <!-- First Section End -->
     </main>
 </body>
 </html>
